@@ -46,17 +46,17 @@ export default {
     humanizeStatus(status) {
       switch (status) {
         case TaskStatus.WAITING:
-          return 'Waiting';
+          return '等待';
         case TaskStatus.RUNNING:
-          return 'Running';
+          return '运行';
         case TaskStatus.SUCCESS:
           return '成功';
         case TaskStatus.ERROR:
-          return 'Failed';
+          return '失败';
         case TaskStatus.STOPPING:
-          return 'Stopping...';
+          return '停止';
         case TaskStatus.STOPPED:
-          return 'Stopped';
+          return '已停';
         default:
           throw new Error(`Unknown task status ${status}`);
       }
