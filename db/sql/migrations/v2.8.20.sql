@@ -12,7 +12,7 @@ create table `event`
     `user_id` int,
     foreign key (`project_id`) references `project`(`id`) on delete cascade,
     foreign key (`user_id`) references `user`(`id`) on delete set null
-);
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 insert into `event`(id, project_id, object_id, object_type, description, created, user_id) select id, project_id, object_id, object_type, description, created, user_id from `event_backup_7534878`;
 drop table `event_backup_7534878`;

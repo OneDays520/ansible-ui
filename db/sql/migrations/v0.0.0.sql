@@ -8,13 +8,13 @@ create table `user` (
 
 	unique (`username`),
 	unique (`email`)
-);
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 create table `project` (
 	`id` integer primary key autoincrement,
 	`created` datetime not null,
 	`name` varchar(255) not null
-);
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 create table `project__user` (
 	`project_id` int not null,
@@ -24,7 +24,7 @@ create table `project__user` (
 	unique (`project_id`, `user_id`),
 	foreign key (`project_id`) references project(`id`) on delete cascade,
 	foreign key (`user_id`) references `user`(`id`) on delete cascade
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 create table `access_key` (
 	`id` integer primary key autoincrement,
@@ -36,7 +36,7 @@ create table `access_key` (
 	`secret` text null,
 
 	foreign key (`project_id`) references project(`id`) on delete set null
-);
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 create table `project__repository` (
 	`id` integer primary key autoincrement,
@@ -46,7 +46,7 @@ create table `project__repository` (
 
 	foreign key (`project_id`) references project(`id`) on delete cascade,
 	foreign key (`ssh_key_id`) references access_key(`id`)
-);
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 create table `project__inventory` (
 	`id` integer primary key autoincrement,
@@ -57,7 +57,7 @@ create table `project__inventory` (
 
 	foreign key (`project_id`) references project(`id`) on delete cascade,
 	foreign key (`key_id`) references access_key(`id`)
-);
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 create table `project__environment` (
 	`id` integer primary key autoincrement,
@@ -66,7 +66,7 @@ create table `project__environment` (
 	`json` longtext not null,
 
 	foreign key (`project_id`) references project(`id`) on delete cascade
-);
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 create table `project__template` (
 	`id` integer primary key autoincrement,
@@ -82,14 +82,14 @@ create table `project__template` (
 	foreign key (`inventory_id`) references project__inventory(`id`),
 	foreign key (`repository_id`) references project__repository(`id`),
 	foreign key (`environment_id`) references project__environment(`id`)
-);
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 create table `project__template_schedule` (
 	`template_id` int primary key,
 	`cron_format` varchar(255) not null,
 
 	foreign key (`template_id`) references project__template(`id`) on delete cascade
-);
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin;;
 
 create table `task` (
 	`id` integer primary key autoincrement,
@@ -99,7 +99,7 @@ create table `task` (
 	`environment` longtext null,
 
 	foreign key (`template_id`) references project__template(`id`) on delete cascade
-);
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 create table `task__output` (
 	`task_id` int not null,
@@ -109,4 +109,4 @@ create table `task__output` (
 
 	unique (`task_id`, `time`),
 	foreign key (`task_id`) references task(`id`) on delete cascade
-);
+) ENGINE=InnoDB AUTO_INCREMENT=405 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;

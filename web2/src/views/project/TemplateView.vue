@@ -60,7 +60,7 @@
             :to="viewId
               ? `/project/${projectId}/views/${viewId}/templates/`
               : `/project/${projectId}/templates/`"
-        >Task Templates</router-link>
+        >任务模板</router-link>
         <v-icon>mdi-chevron-right</v-icon>
         <span class="breadcrumbs__item">{{ item.alias }}</span>
       </v-toolbar-title>
@@ -111,7 +111,7 @@
               </v-list-item-icon>
 
               <v-list-item-content>
-                <v-list-item-title>Playbook</v-list-item-title>
+                <v-list-item-title>剧本</v-list-item-title>
                 <v-list-item-subtitle>{{ item.playbook }}</v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
@@ -125,7 +125,7 @@
               </v-list-item-icon>
 
               <v-list-item-content>
-                <v-list-item-title>Type</v-list-item-title>
+                <v-list-item-title>任务类型</v-list-item-title>
                 <v-list-item-subtitle>{{ TEMPLATE_TYPE_TITLES[item.type] }}</v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
@@ -139,7 +139,7 @@
               </v-list-item-icon>
 
               <v-list-item-content>
-                <v-list-item-title>Inventory</v-list-item-title>
+                <v-list-item-title>主机清单</v-list-item-title>
                 <v-list-item-subtitle>
                   {{ inventory.find((x) => x.id === item.inventory_id).name }}
                 </v-list-item-subtitle>
@@ -154,7 +154,7 @@
                 <v-icon>mdi-code-braces</v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-title>Environment</v-list-item-title>
+                <v-list-item-title>运行环境</v-list-item-title>
                 <v-list-item-subtitle>
                   {{ environment.find((x) => x.id === item.environment_id).name }}
                 </v-list-item-subtitle>
@@ -169,7 +169,7 @@
                 <v-icon>mdi-git</v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-title>Repository</v-list-item-title>
+                <v-list-item-title>剧本仓库</v-list-item-title>
                 <v-list-item-subtitle>
                   {{ repositories.find((x) => x.id === item.repository_id).name }}
                 </v-list-item-subtitle>

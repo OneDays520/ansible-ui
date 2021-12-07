@@ -6,7 +6,7 @@ CREATE TABLE `session` (
   `ip` varchar(15) NOT NULL DEFAULT '',
   `user_agent` text NOT NULL,
   `expired` boolean NOT NULL DEFAULT false
-);
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 CREATE INDEX `user_id` ON `session`(`user_id`);
 

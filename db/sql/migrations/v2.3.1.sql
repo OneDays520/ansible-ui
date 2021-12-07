@@ -12,7 +12,7 @@ create table session
     ip varchar(39) default '' not null,
     user_agent text not null,
     expired boolean default false not null
-);
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 insert into session select * from session_backup;
 

@@ -161,7 +161,7 @@
         ></v-select>
         <v-select
             v-model="item.vault_key_id"
-            label="库密码"
+            label="剧本库密码"
             clearable
             :items="loginPasswordKeys"
             item-value="id"

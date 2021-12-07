@@ -4,7 +4,7 @@ CREATE TABLE `event` (
   `object_type` varchar(20) DEFAULT '',
   `description` text,
   `created` datetime NOT NULL
-);
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 alter table `task` add `created` datetime null;
 alter table `task` add `start` datetime null;

@@ -6,4 +6,4 @@ create table `project__schedule`
     `template_id` int references project__template (`id`) on delete cascade,
     `project_id` int not null references project (`id`) on delete cascade,
     `cron_format` varchar(255) not null
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;

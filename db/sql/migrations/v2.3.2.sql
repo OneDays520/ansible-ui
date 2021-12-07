@@ -10,7 +10,7 @@ create table user__token
     user_id int not null,
 
     foreign key (`user_id`) references `user`(`id`) on delete cascade
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 insert into user__token select * from user__token_backup;
 
