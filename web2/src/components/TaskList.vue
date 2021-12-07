@@ -99,37 +99,37 @@ export default {
     return {
       headers: [
         {
-          text: 'Task ID',
+          text: '任务ID',
           value: 'id',
           sortable: false,
         },
         {
-          text: 'Version',
+          text: '版本',
           value: 'version',
           sortable: false,
         },
         {
-          text: 'Status',
+          text: '状态',
           value: 'status',
           sortable: false,
         },
         {
-          text: 'User',
+          text: '用户',
           value: 'user_name',
           sortable: false,
         },
         {
-          text: 'Start',
+          text: '启动',
           value: 'start',
           sortable: false,
         },
         {
-          text: 'Duration',
+          text: '持续时间',
           value: 'end',
           sortable: false,
         },
         {
-          text: 'Actions',
+          text: '动作',
           value: 'actions',
           sortable: false,
           width: '0%',
