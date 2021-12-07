@@ -50,7 +50,7 @@ export default {
         case TaskStatus.RUNNING:
           return 'Running';
         case TaskStatus.SUCCESS:
-          return 'Success';
+          return '成功';
         case TaskStatus.ERROR:
           return 'Failed';
         case TaskStatus.STOPPING:
