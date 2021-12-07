@@ -1,0 +1,84 @@
+# github.com/Sirupsen/logrus v1.0.4
+## explicit
+github.com/Sirupsen/logrus
+# github.com/go-gorp/gorp/v3 v3.0.2
+## explicit
+github.com/go-gorp/gorp/v3
+# github.com/go-sql-driver/mysql v1.4.1
+## explicit
+github.com/go-sql-driver/mysql
+# github.com/gobuffalo/packr v1.10.4
+## explicit
+github.com/gobuffalo/packr
+# github.com/gorilla/context v0.0.0-20160226214623-1ea25387ff6f
+## explicit
+github.com/gorilla/context
+# github.com/gorilla/handlers v1.4.2
+## explicit
+github.com/gorilla/handlers
+# github.com/gorilla/mux v1.7.3
+## explicit
+github.com/gorilla/mux
+# github.com/gorilla/securecookie v1.1.1
+## explicit
+github.com/gorilla/securecookie
+# github.com/gorilla/websocket v1.4.1
+## explicit
+github.com/gorilla/websocket
+# github.com/inconshreveable/mousetrap v1.0.0
+github.com/inconshreveable/mousetrap
+# github.com/lann/builder v0.0.0-20180216234317-1b87b36280d0
+## explicit
+github.com/lann/builder
+# github.com/lann/ps v0.0.0-20150810152359-62de8c46ede0
+## explicit
+github.com/lann/ps
+# github.com/lib/pq v1.2.0
+## explicit
+github.com/lib/pq
+github.com/lib/pq/oid
+github.com/lib/pq/scram
+# github.com/masterminds/squirrel v0.0.0-20170825200431-a6b93000bd21
+## explicit
+github.com/masterminds/squirrel
+# github.com/pkg/errors v0.9.1
+## explicit
+github.com/pkg/errors
+# github.com/robfig/cron/v3 v3.0.1
+## explicit
+github.com/robfig/cron/v3
+# github.com/sirupsen/logrus v1.4.2
+## explicit
+# github.com/snikch/goodman v0.0.0-20171125024755-10e37e294daa
+## explicit
+github.com/snikch/goodman/hooks
+github.com/snikch/goodman/transaction
+# github.com/spf13/cobra v1.2.1
+## explicit
+github.com/spf13/cobra
+# github.com/spf13/pflag v1.0.5
+github.com/spf13/pflag
+# go.etcd.io/bbolt v1.3.2
+## explicit
+go.etcd.io/bbolt
+# golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9
+## explicit
+golang.org/x/crypto/bcrypt
+golang.org/x/crypto/blowfish
+golang.org/x/crypto/ssh/terminal
+# golang.org/x/sys v0.0.0-20210510120138-977fb7262007
+golang.org/x/sys/internal/unsafeheader
+golang.org/x/sys/unix
+golang.org/x/sys/windows
+# google.golang.org/appengine v1.6.7
+google.golang.org/appengine/cloudsql
+# gopkg.in/airbrake/gobrake.v2 v2.0.9
+## explicit
+# gopkg.in/asn1-ber.v1 v1.0.0-20170511165959-379148ca0225
+## explicit
+gopkg.in/asn1-ber.v1
+# gopkg.in/gemnasium/logrus-airbrake-hook.v2 v2.1.2
+## explicit
+# gopkg.in/ldap.v2 v2.5.1
+## explicit
+gopkg.in/ldap.v2
