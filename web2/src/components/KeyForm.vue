@@ -66,7 +66,7 @@
 
     <v-checkbox
         v-model="item.override_secret"
-        label="Override"
+        label="覆盖"
         v-if="!isNew"
     />
 
@@ -76,8 +76,8 @@
         type="info"
         v-if="item.type === 'none'"
     >
-      Use this type of key for HTTPS repositories and for
-      playbooks which use non-SSH connections.
+      将此类型的密钥用于HTTPS存储库和
+      使用非SSH连接的剧本。
     </v-alert>
   </v-form>
 </template>

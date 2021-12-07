@@ -33,9 +33,9 @@
         type="info"
         class="mt-4"
     >
-      Environment must be valid JSON. You may use the key <code>ENV</code> to pass
-      environment variables to ansible-playbook.
-      Example:
+      环境必须是有效的JSON。您可以使用键 <code>ENV</code> 通过
+      环境变量到ansible剧本。
+      例如：
       <pre style="font-size: 14px;">{
   "var_available_in_playbook_1": 1245,
   "var_available_in_playbook_2": "test",

@@ -2,8 +2,8 @@
   <div v-if="items != null">
     <EditDialog
       v-model="editDialog"
-      :save-button-text="itemId === 'new' ? 'Create' : 'Save'"
-      :title="`${itemId === 'new' ? 'New' : 'Edit'} Key`"
+      :save-button-text="itemId === 'new' ? '创建' : '保存'"
+      :title="`${itemId === 'new' ? '新建' : '编辑'} 密钥`"
       :max-width="450"
       position="top"
       @save="loadItems()"
@@ -29,12 +29,12 @@
 
     <v-toolbar flat color="white">
       <v-app-bar-nav-icon @click="showDrawer()"></v-app-bar-nav-icon>
-      <v-toolbar-title>Key Store</v-toolbar-title>
+      <v-toolbar-title>密钥库</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn
         color="primary"
         @click="editItem('new')"
-      >New Key</v-btn>
+      >新建密钥</v-btn>
     </v-toolbar>
 
     <v-data-table
@@ -80,17 +80,17 @@ export default {
   methods: {
     getHeaders() {
       return [{
-        text: 'Name',
+        text: '名称',
         value: 'name',
         width: '50%',
       },
       {
-        text: 'Type',
+        text: '类型',
         value: 'type',
         width: '50%',
       },
       {
-        text: 'Actions',
+        text: '动作',
         value: 'actions',
         sortable: false,
       }];
