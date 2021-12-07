@@ -2,8 +2,8 @@
   <div v-if="items != null">
     <EditDialog
       v-model="editDialog"
-      save-button-text="Save"
-      title="Edit Environment"
+      save-button-text="保存"
+      title="编辑环境"
       :max-width="500"
       @save="loadItems"
     >
@@ -28,12 +28,12 @@
 
     <v-toolbar flat color="white">
       <v-app-bar-nav-icon @click="showDrawer()"></v-app-bar-nav-icon>
-      <v-toolbar-title>Environment</v-toolbar-title>
+      <v-toolbar-title>运行环境</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn
         color="primary"
         @click="editItem('new')"
-      >New Environment</v-btn>
+      >新建运行环境</v-btn>
     </v-toolbar>
 
     <v-data-table
@@ -76,12 +76,12 @@ export default {
   methods: {
     getHeaders() {
       return [{
-        text: 'Name',
+        text: '名称',
         value: 'name',
         width: '100%',
       },
       {
-        text: 'Actions',
+        text: '动作',
         value: 'actions',
         sortable: false,
       }];

@@ -2,8 +2,8 @@
   <div v-if="items != null">
     <EditDialog
       v-model="editDialog"
-      :save-button-text="itemId === 'new' ? 'Create' : 'Save'"
-      :title="`${itemId === 'new' ? 'New' : 'Edit'} Inventory`"
+      :save-button-text="itemId === 'new' ? '创建' : '保存'"
+      :title="`${itemId === 'new' ? '新建' : 'Edit'}清单`"
       :max-width="450"
       @save="loadItems"
     >
@@ -28,12 +28,12 @@
 
     <v-toolbar flat color="white">
       <v-app-bar-nav-icon @click="showDrawer()"></v-app-bar-nav-icon>
-      <v-toolbar-title>Inventory</v-toolbar-title>
+      <v-toolbar-title>主机清单</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn
         color="primary"
         @click="editItem('new')"
-      >New Inventory</v-btn>
+      >新建清单</v-btn>
     </v-toolbar>
 
     <v-data-table
@@ -82,22 +82,22 @@ export default {
   methods: {
     getHeaders() {
       return [{
-        text: 'Name',
+        text: '名称',
         value: 'name',
         width: '33.33%',
       },
       {
-        text: 'Type',
+        text: '类型',
         value: 'type',
         width: '33.33%',
       },
       {
-        text: 'Path',
+        text: '路径',
         value: 'inventory',
         width: '33.33%',
       },
       {
-        text: 'Actions',
+        text: '动作',
         value: 'actions',
         sortable: false,
       }];

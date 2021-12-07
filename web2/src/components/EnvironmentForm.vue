@@ -13,7 +13,7 @@
 
     <v-text-field
       v-model="item.name"
-      label="Environment Name"
+      label="环境名称"
       :rules="[v => !!v || 'Name is required']"
       required
       :disabled="formSaving"
