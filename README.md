@@ -2,9 +2,12 @@ Mac开发环境
 
 
 #ENV 
-node v10.24.1   
+node v10.24.1
+
 npm  v6.14.12
+
 go   v1.16.5
+
 
 #git clone
 http://192.168.4.134/test/ansible-ui.git
