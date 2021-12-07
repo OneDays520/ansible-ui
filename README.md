@@ -22,7 +22,7 @@ task deps
 
 ###db mysql###
 
-echo "create database semaphore;" | mysql -uroot -p
+echo "CREATE DATABASE `semaphore` CHARACTER SET utf8 COLLATE utf8_general_ci;" | mysql -uroot -p 
 
 ###Compile, set up & run ###
 

@@ -1,4 +1,4 @@
 package util
 
 //Version is the Semaphore build version as a string
-var Version = "master-5ee81fb2-1638865461-dirty"
+var Version = "master-55f3fb0c-1638868494-dirty"

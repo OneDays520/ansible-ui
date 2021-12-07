@@ -368,7 +368,7 @@
           </v-btn>
           <v-btn text color="blue darken-1" @click="signOut()">
             <v-icon left>mdi-exit-to-app</v-icon>
-            Relogin
+            重新登录
           </v-btn>
         </div>
       </v-container>
