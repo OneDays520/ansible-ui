@@ -2,8 +2,8 @@
   <div v-if="items != null">
     <EditDialog
       v-model="editDialog"
-      :save-button-text="(this.itemId === 'new' ? 'Link' : 'Save')"
-      :title="(this.itemId === 'new' ? 'New' : 'Edit') + ' Team Member'"
+      :save-button-text="(this.itemId === 'new' ? '关联' : '保存')"
+      :title="(this.itemId === 'new' ? '新' : '编辑') + ' 团队成员'"
       @save="loadItems()"
     >
       <template v-slot:form="{ onSave, onError, needSave, needReset }">
@@ -27,12 +27,12 @@
 
     <v-toolbar flat color="white">
       <v-app-bar-nav-icon @click="showDrawer()"></v-app-bar-nav-icon>
-      <v-toolbar-title>Team</v-toolbar-title>
+      <v-toolbar-title>团队</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn
         color="primary"
         @click="editItem('new')"
-      >New Team Member</v-btn>
+      >新成员</v-btn>
     </v-toolbar>
 
     <v-data-table
@@ -93,25 +93,25 @@ export default {
     getHeaders() {
       return [
         {
-          text: 'Name',
+          text: '姓名',
           value: 'name',
           width: '50%',
         },
         {
-          text: 'Username',
+          text: '账户',
           value: 'username',
         },
         {
-          text: 'Email',
+          text: '邮箱',
           value: 'email',
           width: '50%',
         },
         {
-          text: 'Admin',
+          text: '管理员',
           value: 'admin',
         },
         {
-          text: 'Actions',
+          text: '动作',
           value: 'actions',
           sortable: false,
         }];

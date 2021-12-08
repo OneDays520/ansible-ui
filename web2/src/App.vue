@@ -2,8 +2,8 @@
   <v-app v-if="state === 'success'" class="app">
     <EditDialog
         v-model="passwordDialog"
-        save-button-text="Save"
-        title="Change password"
+        save-button-text="保存"
+        title="修改密码"
         v-if="user"
         event-name="i-user"
     >
@@ -21,8 +21,8 @@
 
     <EditDialog
         v-model="userDialog"
-        save-button-text="Save"
-        title="Edit User"
+        save-button-text="保存"
+        title="新建用户"
         v-if="user"
         event-name="i-user"
     >

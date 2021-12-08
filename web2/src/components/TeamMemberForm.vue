@@ -13,7 +13,7 @@
 
     <v-select
       v-model="item.user_id"
-      label="User"
+      label="用户"
       :items="users"
       item-value="id"
       item-text="name"
@@ -24,7 +24,7 @@
 
     <v-checkbox
       v-model="item.admin"
-      label="Administrator"
+      label="管理员"
     ></v-checkbox>
   </v-form>
 </template>

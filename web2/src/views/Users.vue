@@ -2,8 +2,8 @@
   <div v-if="items != null">
     <EditDialog
       v-model="editDialog"
-      save-button-text="Save"
-      title="Edit User"
+      save-button-text="保存"
+      title="编辑用户"
       @save="loadItems()"
     >
       <template v-slot:form="{ onSave, onError, needSave, needReset }">
@@ -33,12 +33,12 @@
       >
         <v-icon>mdi-arrow-left</v-icon>
       </v-btn>
-      <v-toolbar-title>Users</v-toolbar-title>
+      <v-toolbar-title>用户</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn
         color="primary"
         @click="editItem('new')"
-      >New User</v-btn>
+      >新建用户</v-btn>
     </v-toolbar>
 
     <v-data-table
@@ -105,33 +105,33 @@ export default {
   methods: {
     getHeaders() {
       return [{
-        text: 'Name',
+        text: '姓名',
         value: 'name',
         width: '50%',
       },
       {
-        text: 'Username',
+        text: '账户',
         value: 'username',
       },
       {
-        text: 'Email',
+        text: '邮箱',
         value: 'email',
       },
       {
-        text: 'Alert',
+        text: '告警',
         value: 'alert',
       },
       {
-        text: 'Admin',
+        text: '管理',
         value: 'admin',
       },
       {
-        text: 'External',
+        text: '外部',
         value: 'external',
         width: '50%',
       },
       {
-        text: 'Actions',
+        text: '动作',
         value: 'actions',
         sortable: false,
       }];

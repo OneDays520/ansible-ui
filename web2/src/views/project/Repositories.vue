@@ -2,8 +2,8 @@
   <div v-if="items != null && keys != null">
     <EditDialog
       v-model="editDialog"
-      :save-button-text="itemId === 'new' ? 'Create' : 'Save'"
-      :title="`${itemId === 'new' ? 'New' : 'Edit'} Repository`"
+      :save-button-text="itemId === 'new' ? '创建' : '保存'"
+      :title="`${itemId === 'new' ? '新' : '编辑'} 仓库`"
       @save="loadItems()"
     >
       <template v-slot:form="{ onSave, onError, needSave, needReset }">
@@ -27,12 +27,12 @@
 
     <v-toolbar flat color="white">
       <v-app-bar-nav-icon @click="showDrawer()"></v-app-bar-nav-icon>
-      <v-toolbar-title>Playbook Repositories</v-toolbar-title>
+      <v-toolbar-title>剧本仓库</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn
         color="primary"
         @click="editItem('new')"
-      >New Repository</v-btn>
+      >新建仓库</v-btn>
     </v-toolbar>
 
     <v-data-table
@@ -94,12 +94,12 @@ export default {
   methods: {
     getHeaders() {
       return [{
-        text: 'Name',
+        text: '名称',
         value: 'name',
         width: '25%',
       },
       {
-        text: 'Git URL',
+        text: 'Git地址',
         value: 'git_url',
         width: '50%',
       },
@@ -109,7 +109,7 @@ export default {
         width: '25%',
       },
       {
-        text: 'Actions',
+        text: '动作',
         value: 'actions',
         sortable: false,
       }];

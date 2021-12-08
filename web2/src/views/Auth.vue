@@ -13,7 +13,7 @@
         v-model="signInFormValid"
         style="width: 300px; height: 300px;"
       >
-        <h3 class="text-center mb-8">SEMAPHORE</h3>
+        <h3 class="text-center mb-8">JY-SEMAPHORE</h3>
 
         <v-alert
           :value="signInError != null"
@@ -23,7 +23,7 @@
 
         <v-text-field
           v-model="username"
-          label="Username"
+          label="账户"
           :rules="usernameRules"
           autofocus
           required
@@ -32,7 +32,7 @@
 
         <v-text-field
           v-model="password"
-          label="Password"
+          label="密码"
           :rules="[v => !!v || 'Password is required']"
           type="password"
           required
@@ -46,7 +46,7 @@
           :disabled="signInProcess"
           block
         >
-          Sign In
+          登录
         </v-btn>
       </v-form>
     </v-container>

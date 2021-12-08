@@ -46,12 +46,12 @@
 
     <v-checkbox
       v-model="item.admin"
-      label="Admin user"
+      label="管理员"
     ></v-checkbox>
 
     <v-checkbox
       v-model="item.alert"
-      label="Send alerts"
+      label="发送告警"
     ></v-checkbox>
   </v-form>
 </template>
