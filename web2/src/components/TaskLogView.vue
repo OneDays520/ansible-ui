@@ -24,7 +24,7 @@
           <v-list two-line subheader class="pa-0">
             <v-list-item class="pa-0">
               <v-list-item-content>
-                <v-list-item-title>Author</v-list-item-title>
+                <v-list-item-title>作者</v-list-item-title>
                 <v-list-item-subtitle>{{ user.name }}</v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
@@ -34,7 +34,7 @@
           <v-list two-line subheader class="pa-0">
             <v-list-item class="pa-0">
               <v-list-item-content>
-                <v-list-item-title>Started</v-list-item-title>
+                <v-list-item-title>启动</v-list-item-title>
                 <v-list-item-subtitle>
                   {{ item.start | formatDate }}
                 </v-list-item-subtitle>
@@ -45,7 +45,7 @@
         <v-col>
           <v-list-item class="pa-0">
             <v-list-item-content>
-              <v-list-item-title>Duration</v-list-item-title>
+              <v-list-item-title>持续时间</v-list-item-title>
               <v-list-item-subtitle>
                 {{ [item.start, item.end] | formatMilliseconds }}
               </v-list-item-subtitle>

@@ -10,7 +10,7 @@
     <EditDialog
         :max-width="700"
         v-model="editDialog"
-        save-button-text="Save"
+        save-button-text="保存"
         title="编辑模板"
         @save="loadData()"
     >

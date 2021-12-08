@@ -1,7 +1,7 @@
 Mac开发环境
 
 
-###ENV
+###hosts env
 
 node v10.24.1
 
