@@ -30,7 +30,7 @@
     <v-select
         v-if="template.type === 'deploy'"
         v-model="item.build_task_id"
-        label="Build Version"
+        label="Build版本"
         :items="buildTasks"
         item-value="id"
         :item-text="(itm) => itm.version + (itm.message ? ' — ' + itm.message : '')"

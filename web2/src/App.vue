@@ -233,7 +233,7 @@
           </v-list-item-icon>
 
           <v-list-item-content>
-            <v-list-item-title>密钥库</v-list-item-title>
+            <v-list-item-title>密钥仓库</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -243,7 +243,7 @@
           </v-list-item-icon>
 
           <v-list-item-content>
-            <v-list-item-title>剧本库</v-list-item-title>
+            <v-list-item-title>剧本仓库</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -253,7 +253,7 @@
           </v-list-item-icon>
 
           <v-list-item-content>
-            <v-list-item-title>团队</v-list-item-title>
+            <v-list-item-title>团队成员</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>

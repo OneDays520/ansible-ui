@@ -174,7 +174,7 @@
         <v-textarea
             outlined
             v-model="item.description"
-            label="描述"
+            label="描述:"
             :disabled="formSaving"
             rows="5"
         ></v-textarea>

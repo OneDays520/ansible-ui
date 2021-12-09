@@ -29,7 +29,7 @@
 
     <v-toolbar flat color="white">
       <v-app-bar-nav-icon @click="showDrawer()"></v-app-bar-nav-icon>
-      <v-toolbar-title>密钥库</v-toolbar-title>
+      <v-toolbar-title>密钥仓库</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn
         color="primary"

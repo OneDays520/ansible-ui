@@ -5,13 +5,13 @@ export const TEMPLATE_TYPE_ICONS = {
 };
 
 export const TEMPLATE_TYPE_TITLES = {
-  '': 'Task',
-  build: 'Build',
-  deploy: 'Deploy',
+  '': '任务',
+  build: '构建',
+  deploy: '部署',
 };
 
 export const TEMPLATE_TYPE_ACTION_TITLES = {
-  '': 'Run',
-  build: 'Build',
-  deploy: 'Deploy',
+  '': '运行',
+  build: '构建',
+  deploy: '部署',
 };

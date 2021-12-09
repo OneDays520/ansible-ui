@@ -422,7 +422,7 @@ export default {
           sortable: false,
         },
         {
-          text: '剧本库',
+          text: '剧本仓库',
           value: 'repository_id',
           sortable: false,
         },

@@ -27,7 +27,7 @@
 
     <v-toolbar flat color="white">
       <v-app-bar-nav-icon @click="showDrawer()"></v-app-bar-nav-icon>
-      <v-toolbar-title>团队</v-toolbar-title>
+      <v-toolbar-title>团队成员</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn
         color="primary"
