@@ -23,10 +23,13 @@ task deps
 echo "CREATE DATABASE `semaphore` CHARACTER SET utf8 COLLATE utf8_general_ci;" | mysql -uroot -p 
 
 ###Compile & setup & run ###
+
 #Compile
 task compile
+
 #Setup
 go run cli/main.go setup
+
 #run
 go run cli/main.go --config ./config.json
 
