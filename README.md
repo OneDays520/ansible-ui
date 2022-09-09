@@ -32,9 +32,11 @@ task compile
 go run cli/main.go setup
 
 #run
+
 go run cli/main.go --config ./config.json
 
 #or
+
 ./run.sh
 
 #build
