@@ -12,7 +12,7 @@ go   v1.16.5
 
 ###git clone
 
-http://192.168.4.134/test/ansible-ui.git
+https://github.com/OneDays520/ansible-ui.git
 
 ###install Task
 
